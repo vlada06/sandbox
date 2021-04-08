@@ -14,13 +14,13 @@ class RecursiveFibonacciTest {
     RecursiveFibonacci recursiveFibonacci;
 
     @BeforeEach
-    void setUp(){
+    void setUp() {
         recursiveFibonacci = new RecursiveFibonacci();
     }
 
     @Test
     @DisplayName("getFibonacciFunction() test")
-    void getFibonacciFunctionTest(){
+    void getFibonacciFunctionTest() {
         int max = 7;
         List<Long> fibonacciNumbers = new ArrayList<>();
         for (int i = 0; i <= max; i++) {
@@ -28,7 +28,7 @@ class RecursiveFibonacciTest {
         }
 
         assertEquals(13L, fibonacciNumbers.get(max));
-        assertTrue(fibonacciNumbers.size()==8);
+        assertTrue(fibonacciNumbers.size() == 8);
     }
 
 }
